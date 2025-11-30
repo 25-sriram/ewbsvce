@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nanotechnology Blog | EWB-SVCE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <style>
+    body {
+      font-family: 'Times New Roman', serif;
+      background: #f9fdf9;
+      overflow-x: hidden;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url("static/images/nanobanner.png") center/cover no-repeat;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      position: relative;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      animation: fadeInDown 1s ease;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    /* Back Button */
+    .back-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: rgba(20, 90, 50, 0.85);
+      color: white;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 1.4rem;
+      transition: background 0.3s ease;
+      z-index: 1000;
+    }
+    .back-btn:hover {
+      background: #0d3d24;
+    }
+
+    /* Blog Sections */
+    .blog-section {
+      margin: 60px 0;
+    }
+    .blog-card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .blog-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,128,0,0.25);
+    }
+    .blog-card h3 {
+      color: #1e8449;
+      margin-bottom: 15px;
+    }
+    .blog-card ul {
+      padding-left: 18px;
+    }
+    .blog-card li {
+      margin-bottom: 8px;
+    }
+    .blog-img {
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Responsive */
+    @media(max-width:768px){
+      .hero h1 { font-size: 2rem; }
+      .hero p { font-size: 1rem; }
+      .blog-card { padding: 20px; }
+      .blog-img { max-height: 160px; }
+      .back-btn { width: 40px; height: 40px; font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <!-- Back button -->
+    <a href="/Blogs.html" class="back-btn">
+      <i class="bi bi-arrow-left"></i>
+    </a>
+    <h1>Nanotechnology</h1>
+    <p class="lead">Revolutionizing Industries and Shaping the Future</p>
+  </section>
+
+  <!-- Blog Content -->
+  <div class="container">
+
+    <!-- Introduction -->
+    <div class="blog-section reveal active">
+      <div class="blog-card">
+        <h3>Introduction</h3>
+        <p>Nanotechnology, which involves manipulating matter at the atomic and molecular scale (typically 1–100 nanometers), is transforming the way industries innovate and operate. From healthcare to electronics, its impact is far-reaching and rapidly expanding. The global nanotechnology market, valued at around $85 billion in 2022, is projected to surge to nearly $288 billion by 2030, driven by a strong CAGR of 16.8%. This explosive growth highlights nanotech’s potential to revolutionize products, processes, and future technologies across multiple sectors.</p>
+        <img src="static/images/nintro.png" class="img-fluid blog-img" alt="Nanotech Introduction">
+      </div>
+    </div>
+
+    <!-- Medicine -->
+    <div class="blog-section reveal">
+      <div class="blog-card">
+        <h3>Nanotechnology in Medicine</h3>
+        <p>In healthcare, nanotechnology is unlocking breakthroughs that were once thought impossible. Targeted drug delivery using nanoparticles can boost efficiency by 40–60%, ensuring medicines act precisely where needed while minimizing side effects. By 2035, nano-robots are expected to revolutionize surgeries with unmatched precision, even enabling advanced tissue repair. Cancer treatments are also being transformed, with nanoparticle-based chemotherapy improving patient outcomes by nearly 30%. Beyond treatment, regenerative medicine is benefiting from nanotech scaffolds that support tissue repair and growth, potentially reducing the need for organ transplants in the future.</p>
+        <img src="static/images/nmedicine.png" class="img-fluid blog-img" alt="Nanotech Medicine">
+      </div>
+    </div>
+
+    <!-- Electronics -->
+    <div class="blog-section reveal">
+      <div class="blog-card">
+        <h3>Nanotechnology in Electronics</h3>
+        <p>Nanotechnology is also driving major advancements in electronics and computing. The semiconductor industry, for example, is projected to soar to $1 trillion by 2030, fueled by nanotech innovations. Materials like graphene and carbon nanotubes, which are nearly 100 times faster than silicon, are set to supercharge artificial intelligence and next-generation computing. In consumer electronics, quantum dot displays are emerging as game changers, consuming 30% less energy while lasting twice as long as conventional LEDs. Additionally, nanotechnology is paving the way for wearable tech with flexible screens and ultra-thin batteries, making devices lighter, smarter, and more efficient.</p>
+        <img src="static/images/nelectronics.png" class="img-fluid blog-img" alt="Nanotech Electronics">
+      </div>
+    </div>
+
+    <!-- Environment -->
+    <div class="blog-section reveal">
+      <div class="blog-card">
+        <h3>Nanotechnology & The Environment</h3>
+        <p>Beyond healthcare and electronics, nanotechnology is playing a vital role in sustainability and environmental protection. Advanced nanomaterials can remove up to 99.9% of contaminants from water and air, ensuring cleaner resources. In pollution control, nanosponges can clean oil spills up to five times faster, while nanotech-based solutions are helping cut CO₂ emissions by nearly 30%. Renewable energy is also benefiting, with solar panels enhanced by nanotechnology achieving 20–25% higher efficiency, making green energy more accessible and impactful for the future.</p>
+        <img src="static/images/nenvironment.png" class="img-fluid blog-img" alt="Nanotech Environment">
+      </div>
+    </div>
+
+    <!-- Space -->
+    <div class="blog-section reveal">
+      <div class="blog-card">
+        <h3>Nanotechnology in Space Exploration</h3>
+        <p>Nanotechnology is also revolutionizing the field of space exploration by enabling stronger, smarter, and more resilient materials. Advanced nanomaterials can make spacecraft up to 35% lighter, significantly cutting launch costs while boosting efficiency. Self-healing coatings promise to extend spacecraft lifespans by automatically repairing minor damage, while specialized nanotech shields can block nearly 70% of harmful space radiation, protecting astronauts on long missions. Looking ahead, by 2040, these innovations are expected to play a crucial role in deep space travel and even aid ambitious goals like Mars colonization, making interplanetary exploration more feasible than ever before.</p>
+      </div>
+    </div>
+
+    <!-- Challenges -->
+    <div class="blog-section reveal">
+      <div class="blog-card">
+        <h3>Challenges Facing Nanotechnology</h3>
+        <p>Nanotechnology is set to transform space exploration by introducing lighter, stronger, and more resilient materials. Spacecraft built with advanced nanomaterials can be up to 35% lighter, lowering launch costs and improving efficiency. Self-healing coatings could prolong spacecraft lifespans by repairing minor damage on their own, while nanotech-based shields offer protection by blocking nearly 70% of harmful space radiation. By 2040, these breakthroughs are expected to play a key role in deep space missions and could even support humanity’s ambitious goal of Mars colonization, bringing the dream of interplanetary travel closer to reality.</p>
+        <img src="static/images/nchallenges.png" class="img-fluid blog-img" alt="Nanotech Challenges">
+      </div>
+    </div>
+
+    <!-- Conclusion -->
+    <div class="blog-section reveal">
+      <div class="blog-card">
+        <h3>Conclusion</h3>
+        <p>In conclusion, nanotechnology is poised to have a massive economic and scientific impact, with the market expected to surpass $280 billion by 2030 as it drives breakthroughs across healthcare, electronics, energy, and space exploration. However, with such powerful potential comes the need for ethical responsibility. Strong regulations, sustainable practices, and careful oversight will be essential to ensure that nanotech evolves safely, responsibly, and for the greater good of humanity.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center p-3" style="background:#145a32;color:white;">
+    © 2025 Engineers Without Borders - SVCE Student Chapter
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Scroll reveal animation
+// Scroll reveal animation (skip already active sections)
+const reveals = document.querySelectorAll('.reveal');
+window.addEventListener('scroll', () => {
+  for (let r of reveals) {
+    if (!r.classList.contains('active')) { // don't re-trigger
+      const rect = r.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        r.classList.add('active');
+      }
+    }
+  }
+});
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black Holes Blog | EWB-SVCE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <style>
+    body {
+      font-family: 'Times New Roman', serif;
+      background: #0d0d0d;
+      color: #f9fdf9;
+      overflow-x: hidden;
+    }
+
+    /* Hero */
+    .hero {
+      background: url("static/images/bhbanner.png") center/cover no-repeat;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      position: relative;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      animation: fadeInDown 1s ease;
+    }
+
+    /* Back Button */
+    .back-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 1.4rem;
+      transition: background 0.3s ease;
+      z-index: 1000;
+    }
+    .back-btn:hover {
+      background: #1e1e1e;
+    }
+
+    /* Blog Sections */
+    .blog-section {
+      margin: 60px 0;
+    }
+    .blog-card {
+      background: #1a1a1a;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .blog-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(255,255,255,0.2);
+    }
+    .blog-card h3 {
+      color: #ff4c4c;
+      margin-bottom: 15px;
+    }
+    .blog-card ul {
+      padding-left: 18px;
+    }
+    .blog-card li {
+      margin-bottom: 8px;
+    }
+    .blog-img {
+      max-height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Responsive */
+    @media(max-width:768px){
+      .hero h1 { font-size: 2rem; }
+      .blog-card { padding: 20px; }
+      .blog-img { max-height: 160px; }
+      .back-btn { width: 40px; height: 40px; font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <a href="/Blogs.html" class="back-btn">
+      <i class="bi bi-arrow-left"></i>
+    </a>
+    <h1>Black Holes</h1>
+    <p class="lead">The Mysterious Giants of Space</p>
+  </section>
+
+  <div class="container">
+
+    <!-- Introduction 1 -->
+    <div class="blog-section reveal active">
+      <div class="blog-card">
+        <h3>Introduction</h3>
+        <p>Have you ever imagined a place in the universe where gravity is so powerful that nothing, not even light itself, can escape its pull? This mysterious phenomenon is known as a black hole. Formed from the collapse of massive stars, black holes represent some of the most extreme and fascinating objects in space, warping both time and space around them.</p>
+        <img src="static/images/bhbanner.png" class="img-fluid blog-img" alt="Introduction">
+      </div>
+    </div>
+
+    <!-- Introduction 2 -->
+    <div class="blog-section reveal">
+      <div class="blog-card">
+        <h3>What is a Black Hole?</h3>
+        <p>Black holes are among the most mysterious and powerful objects in the universe. Their immense gravity can stretch time, bend light, and even consume entire stars, making them both terrifying and fascinating. By studying black holes, scientists gain deeper insights into the extreme laws of physics, unlocking secrets about how the universe works at its most fundamental level.</p>
+        <img src="static/images/whbh.png" class="img-fluid blog-img" alt="What is a Black Hole">
+      </div>
+    </div>
+
+    <!-- Formation -->
+    <div class="blog-section reveal">
+      <div class="blog-card">
+        <h3>Formation of a Black Hole</h3>
+        <p>A black hole is born from the dramatic death of a massive star. When such a star exhausts its fuel, it can no longer support itself, leading to a catastrophic collapse under its own gravity. This process compresses the star’s core into an incredibly dense region where gravity becomes so strong that it pulls everything inward. In simple terms, the life cycle goes from a massive star’s existence, to its death, followed by gravitational collapse, ultimately forming a dense and powerful black hole.</p>
+        <img src="static/images/formation.png" class="img-fluid blog-img" alt="Formation of Black Hole">
+      </div>
+    </div>
+
+    <!-- Structure -->
+    <div class="blog-section reveal">
+      <div class="blog-card">
+        <h3>Structure of a Black Hole</h3>
+        <p>Black holes are defined by some of the most extreme features in the universe. Though invisible to the eye, their presence is revealed through the powerful influence they exert on surrounding matter. At the edge lies the event horizon, the point of no return where nothing—not even light—can escape. At the very core is the singularity, a region of infinite density and gravity where the known laws of physics break down, making black holes one of the greatest cosmic mysteries.</p>
+        <img src="static/images/bstructure.png" class="img-fluid blog-img" alt="Structure">
+      </div>
+    </div>
+
+    <!-- Facts -->
+    <div class="blog-section reveal">
+      <div class="blog-card">
+        <h3>Mind-Blowing Facts</h3>
+        <p>Black holes come with fascinating characteristics that challenge our understanding of the universe. They vary in size, ranging from tiny ones to supermassive giants that sit at the centers of galaxies. Near a black hole, time itself slows down due to intense gravity—a phenomenon known as time dilation. While they pull matter inward, black holes can also eject powerful jets of particles traveling at incredible speeds. Even more astonishing, when black holes collide, they create gravitational waves—ripples in spacetime that scientists can now detect, offering new ways to study the cosmos.</p>
+      </div>
+    </div>
+
+    <!-- Study -->
+    <div class="blog-section reveal">
+      <div class="blog-card">
+        <h3>How Scientists Study Them</h3>
+        <p>Studying black holes requires creative methods since they can’t be seen directly. Scientists capture their presence by imaging shadows using global telescope networks, like the Event Horizon Telescope. They also observe the orbits of nearby stars, which reveal the hidden pull of a black hole’s immense gravity. In addition, X-ray telescopes detect high-energy radiation emitted by matter as it spirals inward, offering another window into these mysterious cosmic giants.</p>
+      </div>
+    </div>
+
+    <!-- Falling -->
+    <div class="blog-section reveal">
+      <div class="blog-card">
+        <h3>What Happens if You Fall into One?</h3>
+        <p>Falling into a black hole would be a mind-bending experience shaped by extreme physics. To an outside observer, you would appear frozen in time near the event horizon, never fully crossing it. From your perspective, however, you’d be stretched thinner and thinner as you approached the center, a process known as spaghettification, where gravity pulls much more strongly on your feet than your head. This strange and terrifying effect highlights just how alien and powerful black holes truly are.</p>
+    </div>
+
+  </div>
+
+  <footer class="text-center p-3" style="background:#1a1a1a;color:white;">
+    © 2025 Engineers Without Borders - SVCE Student Chapter
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Scroll reveal animation
+// Scroll reveal animation (skip already active sections)
+const reveals = document.querySelectorAll('.reveal');
+window.addEventListener('scroll', () => {
+  for (let r of reveals) {
+    if (!r.classList.contains('active')) { // don't re-trigger
+      const rect = r.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        r.classList.add('active');
+      }
+    }
+  }
+});
+
+  </script>
+</body>
+</html>

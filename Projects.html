@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Engineers Without Borders</title>
+
+  <!-- Bootstrap & Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- Navbar CSS -->
+  <link rel="stylesheet" href="../static/css/navbar.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .project-section {
+      padding: 60px 0;
+      background: #fff;
+    }
+    .project-section h1 {
+      color: #0b3d2e;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .project-section h2 {
+      color: #1e8449;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .project-section p {
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+    .project-cards {
+      background: rgba(30, 132, 73, 0.05);
+      padding: 40px 20px;
+      border-radius: 10px;
+    }
+    .project-box {
+      background: #fff;
+      border: 2px solid #1e8449;
+      border-radius: 10px;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+    }
+    .project-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    }
+    .project-box h4 {
+      color: #000;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .project-box ul {
+      list-style: none;
+      padding-left: 0;
+      text-align: left;
+    }
+    .project-box ul li {
+      color: #333;
+      margin-bottom: 8px;
+    }
+    /* Active link highlight fix for mobile navbar */
+    .navbar-nav .nav-link.active,
+    .navbar-nav .dropdown-item.active {
+      background-color: #0b3d2e !important;  /* dark green */
+      color: #fff !important;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+    .gradient-btn {
+  background: linear-gradient(135deg, #1e8449, #2ecc71);
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(30, 132, 73, 0.4);
+}
+.gradient-btn:hover {
+  background: linear-gradient(135deg, #2ecc71, #1e8449);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(30, 132, 73, 0.6);
+  color: #fff;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+      <!-- Bootstrap JS (must come before your script) -->
+ 
+
+
+
+
+<link rel="stylesheet" href="static/css/navbar1.css">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary-blue custom-navbar">
+  <div class="container-fluid">
+    <!-- Left Logo -->
+    <a class="navbar-brand p-0 me-2" href="index.html">
+      <img src="static/images/ewb_logo.png" alt="EWB Logo">
+    </a>
+
+    <!-- SVCE Logo for Mobile (visible only on mobile) -->
+    <a class="navbar-brand p-0 ms-auto d-lg-none" href="#">
+      <img src="static/images/svcelogo.png" alt="SVCE Logo" class="svce-logo" style="height:50px;">
+    </a>
+
+    <!-- Hamburger Icon -->
+    <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Menu -->
+    <div class="collapse navbar-collapse mobile-menu" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="Projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="obs.html">Office Bearers</a></li>
+        <li class="nav-item"><a class="nav-link" href="Blogs.html">Blogs</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Events
+          </a>
+          <ul class="dropdown-menu transparent-dropdown" aria-labelledby="eventsDropdown">
+            <li><a class="dropdown-item" href="gallery.html">2025 - 2026</a></li>
+            <li><a class="dropdown-item" href="event1.html">2024 - 2025</a></li>
+            <li><a class="dropdown-item" href="event2.html">2023 - 2024</a></li>
+            <li><a class="dropdown-item" href="event3.html">2022 - 2023</a></li>
+            <li><a class="dropdown-item" href="event4.html">2021 - 2022</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Right Logo (visible only on large screens) -->
+      <a class="navbar-brand p-0 ms-3 d-none d-lg-block" href="#">
+        <img src="static/images/svcelogo.png" alt="SVCE Logo" class="svce-logo">
+      </a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Function to toggle the navbar
+  function toggleNavbar() {
+    const navbar = document.getElementById('navbarNav');
+    const isExpanded = navbar.classList.contains('show');
+    
+    // Toggle the class 'show' to open/close the navbar
+    if (isExpanded) {
+      navbar.classList.remove('show');
+    } else {
+      navbar.classList.add('show');
+    }
+  }
+</script>
+
+
+  <!-- PROJECTS SECTION -->
+  <section class="project-section container text-center">
+    <h1 class="mb-3">Projects</h1>
+      <h1 class="mb-3">(2025 - 2026)</h1>
+    <h2 class="mb-4">Initiating A New Project</h2>
+    <p>At Engineers Without Borders - SVCE Student Chapters, we focus on impactful community-based projects, some successfully completed, while others are ongoing driven by innovation and teamwork. If you’re interested in joining our project team, we’d love to hear your ideas. Simply drop your project concept in the form below, and together we can work on turning it into something meaningful for the community.
+    </p>
+    <!-- Stylish Gradient Button -->
+    <a href="application.html" target="_blank" class="gradient-btn">
+      <i class="bi bi-file-earmark-text"></i> Project Application Form
+    </a>
+    <div class="project-cards mt-5">
+      <h2 class="mb-4">Currently Ongoing Projects</h2>
+      <div class="row g-4">
+        <!-- Column 1 -->
+        <div class="col-12 col-md-4">
+        <a href="static/pdfs/autogreen.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+          <div class="project-box h-100">
+            <h4>Smart Ambulance Traffic Control (AUTOGREEN)</h4>
+            <p>An EWB project designed to give ambulances a clear path by turning red lights green when they approach. The system reduces delays, speeds up emergency response, and helps save lives, with future scope in IoT and AI-based traffic optimization.</p>
+          </div>
+        </a>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="col-12 col-md-4">
+          <div class="project-box h-100">
+            <h4>Microplastic Remedation</h4>
+            <p>Our research addresses LDPE microplastic pollution using an integrated biodegradation approach that merges fungal degradation with supplementary biological agents. This synergistic method enhances plastic breakdown efficiency, showing clear improvements in surface modification and mass reduction. It presents a sustainable, eco-friendly pathway for microplastic remediation and future large-scale environmental applications.</p>
+          </div>
+        </div>
+        <!-- Column 3 -->
+        <div class="col-12 col-md-4">
+          <div class="project-box h-100">
+            <h4>Coming soon....</h4>
+          </div>
+        </div>
+      </div>
+      <br>
+        <h2 class="mb-4">Projects Completed</h2></br>
+        <div class="row g-4">
+        <!-- Column 1 -->
+        <div class="col-12 col-md-4">
+        <a href="" target="_blank" style="text-decoration: none; color: inherit;">
+          <div class="project-box h-100">
+            <h4>Coastel Cleanup</h4>
+            <p>EWB-SVCE students took part in a coastal cleanup drive at Marina Beach, promoting environmental awareness and community responsibility. The event highlighted the importance of protecting our shoreline and marine ecosystem.</p>
+          </div>
+        </a>
+        </div>
+
+        <!-- Column 2 -->
+
+        <!-- Column 3 -->
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-primary-blue text-white text-center p-3">
+    © 2025 Engineers Without Borders - SVCE Student Chapter | All Rights Reserved
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+   
+    <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const path = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+
+    // Clear all existing actives
+    document.querySelectorAll('.navbar .nav-link, .dropdown-menu .dropdown-item')
+      .forEach(a => a.classList.remove('active'));
+
+    // Mark exact-match nav link or dropdown item
+    document.querySelectorAll('.navbar .nav-link, .dropdown-menu .dropdown-item')
+      .forEach(a => {
+        const href = (a.getAttribute('href') || '').split('/').pop().toLowerCase();
+        if (href && href === path) a.classList.add('active');
+      });
+
+    // If on any events page, also light up the Events toggle
+    const eventPages = [
+      'gallery.html','event1.html','event2.html','event3.html','event4.html',
+      'pastyear.html','pastyear2.html'
+    ];
+    if (eventPages.includes(path)) {
+      const eventsToggle = document.getElementById('eventsDropdown');
+      if (eventsToggle) eventsToggle.classList.add('active');
+    }
+  });
+</script>
+</body>
+</html>
