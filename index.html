@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
     .bg-primary-blue {
       background: linear-gradient(to right,
           #ffffff 0%,
@@ -115,25 +120,66 @@
       width: auto;
     }
 
+    /* Increase height and ensure images fit well */
     .carousel-img {
-      height: 500px;
+      height: 650px;
+      /* Increased height */
       object-fit: cover;
+      width: 100%;
+    }
+
+    /* Transparent Green Background for labels */
+    .carousel-caption-custom {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: 15px;
+      margin-right: 440px;
+      margin-left: 440px;
+      margin-bottom: 60px;
+      padding: 15px;
+      background: rgba(30, 132, 73, 0.7);
+      /* Transparent green */
+      color: white;
+      text-align: center;
+
+    }
+
+    .carousel-caption-custom h5 {
+      margin: 0;
+      font-weight: bold;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
     @media (max-width: 768px) {
       .carousel-img {
-        height: 300px;
-        /* smaller on mobile */
+        height: 400px;
+        /* Adjust for mobile */
+      }
+
+      .carousel-caption-custom {
+        /* Reset large desktop margins for mobile */
+        margin-left: 10%;
+        margin-right: 10%;
+
+        /* Adjust bottom spacing to stay above dots on smaller screens */
+        margin-bottom: 45px;
+
+        /* Reduce padding for a slimmer look on mobile */
+        padding: 8px;
+        border-radius: 10px;
+      }
+
+      .carousel-caption-custom h5 {
+        font-size: 1rem;
+        /* Slightly smaller for better fit */
+        letter-spacing: 0.5px;
       }
     }
 
-    .carousel-caption {
-      background-color: rgba(30, 132, 73, 0.7);
-      border-radius: 5px;
-      padding: 20px;
-      bottom: 50px;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-    }
 
     .welcome-section {
       background: linear-gradient(to right, #eef4f2 0%, #f6f7f6 100%);
@@ -508,46 +554,60 @@
   </script>
 
   <!-- Carousel Section -->
-  <div id="ewbCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="900">
-    <!-- Indicators -->
+  <div id="ewbCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#ewbCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-        aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#ewbCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#ewbCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#ewbCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      <button type="button" data-bs-target="#ewbCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#ewbCarousel" data-bs-slide-to="0" class="active"
+        aria-current="true"></button>
+      <button type="button" data-bs-target="#ewbCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#ewbCarousel" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#ewbCarousel" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#ewbCarousel" data-bs-slide-to="4"></button>
     </div>
 
-    <!-- Carousel Items -->
     <div class="carousel-inner">
-      <!-- Slide 1 -->
       <div class="carousel-item active">
-        <img src="static/images/inaug.jpg" class="d-block w-100 carousel-img" alt="Community Project">
+        <img src="static/images/inaug.jpg" class="d-block w-100 carousel-img" alt="Inauguration">
+        <div class="carousel-caption-custom">
+          <h5>Inauguration Ceremony 2025</h5>
+        </div>
       </div>
 
-      <!-- Slide 2 -->
       <div class="carousel-item">
-        <img src="static/images/coastel.jpg" class="d-block w-100 carousel-img" alt="Education Program">
+        <img src="static/images/coastel.jpg" class="d-block w-100 carousel-img" alt="Coastal Cleanup">
+        <div class="carousel-caption-custom">
+          <h5>Coastal Cleanup</h5>
+        </div>
       </div>
 
-      <!-- Slide 3 -->
       <div class="carousel-item">
-        <img src="static/images/ewb.jpg" class="d-block w-100 carousel-img" alt="Community Project">
+        <img src="static/images/ewb.jpg" class="d-block w-100 carousel-img" alt="EWB Meeting">
+        <div class="carousel-caption-custom">
+          <h5>Inaugration Ceremony 2025</h5>
+        </div>
       </div>
 
-      <!-- Slide 4 -->
       <div class="carousel-item">
-        <img src="static/images/calibs.jpg" class="d-block w-100 carousel-img" alt="Education Program">
+        <img src="static/images/calibs.jpg" class="d-block w-100 carousel-img" alt="Technical Session">
+        <div class="carousel-caption-custom">
+          <h5>Calibrations '25</h5>
+        </div>
       </div>
 
-      <!-- Slide 5 -->
       <div class="carousel-item">
-        <img src="static/images/iitm.png" class="d-block w-100 carousel-img" alt="Global Impact">
+        <img src="static/images/iitm.png" class="d-block w-100 carousel-img" alt="IITM Visit">
+        <div class="carousel-caption-custom">
+          <h5>Industrial Visit - IIT Madras</h5>
+        </div>
       </div>
     </div>
-
-    <!-- Controls -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#ewbCarousel" data-bs-slide-to="0" class="active"
+        aria-current="true"></button>
+      <button type="button" data-bs-target="#ewbCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#ewbCarousel" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#ewbCarousel" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#ewbCarousel" data-bs-slide-to="4"></button>
+    </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#ewbCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
@@ -672,21 +732,24 @@
         <div class="col-md-4 mb-4">
           <h5 class="fw-bold mb-3">MISSION </h5>
           <p style="color:#101010; margin-bottom:10px;">
-            <strong>Mission:</strong> The mission of Engineers Without Borders (EWB) at SVCE is to utilize engineering
-            as a catalyst for positive and sustainable global change. Our multifaceted mission includes
-            community-centric engineering, education, and skill development, fostering global citizenship, promoting
-            innovation and research, and actively seeking collaboration and partnerships.
-
+            The mission of Engineers Without Borders (EWB) at SVCE is to utilize engineering as a catalyst for positive
+            and sustainable global change. Our multifaceted mission includes community-centric engineering, education,
+            and skill development, fostering global citizenship, promoting innovation and research, and actively seeking
+            collaboration and partnerships.
           </p>
 
         </div>
         <div class="col-md-4 mb-4">
           <h5 class="fw-bold mb-3">VISION</h5>
           <p style="color:#030303;">
-            <strong>Vision:</strong> We envision a future where engineering is a force for positive change, empowering
-            communities, fostering cross-cultural understanding, and addressing the most critical issues facing
-            humanity. Through education, collaboration, and ethical engineering practices, we strive to build a network
-            of socially responsible engineers dedicated to improving the well-being of people around the globe.
+          <ul style="color:black">
+            <li><strong>Global Impact:</strong> Solving humanity’s critical challenges and empowering communities
+              through engineering.</li>
+            <li><strong>Ethical Leadership:</strong> Cultivating a network of socially responsible and ethical
+              engineers.</li>
+            <li><strong>Collaborative Education:</strong> Advancing cross-cultural understanding and education for
+              sustainable change.</li>
+          </ul>
           </p>
         </div>
         <!-- Quick Links -->
@@ -732,7 +795,6 @@
   <footer class="bg-primary-blue text-white text-center p-3">
     © 2025 Engineers Without Borders - SVCE Student Chapter | All Rights Reserved
   </footer>
-  >
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
