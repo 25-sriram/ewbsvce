@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,14 +17,15 @@
 
     /* Hero Banner */
     .blogs-hero {
-      background:url("static/images/blogbanner1.jpg") center/cover no-repeat;
+      background: url("static/images/blogbanner1.jpg") center/cover no-repeat;
       color: white;
       text-align: center;
       padding: 120px 20px;
       position: relative;
     }
+
     .blogs-hero h1 {
-      color :rgb(255, 255, 255);
+      color: rgb(255, 255, 255);
       font-size: 5.5rem;
       font-weight: bold;
       animation: slideInFromLeft 1s ease-out;
@@ -35,26 +37,31 @@
       border-radius: 15px;
       overflow: hidden;
       background: white;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
       transform: translateY(50px);
       opacity: 0;
       transition: all 0.8s ease;
     }
+
     .blog-card.show {
       transform: translateY(0);
       opacity: 1;
     }
+
     .blog-card img {
       height: 220px;
       object-fit: cover;
       transition: transform 0.5s ease;
     }
+
     .blog-card:hover img {
       transform: scale(1.05);
     }
+
     .blog-card .card-body {
       padding: 25px;
     }
+
     .blog-card h5 {
       color: #1e8449;
       font-weight: bold;
@@ -62,7 +69,7 @@
 
     /* Hover Glow Effect */
     .blog-card:hover {
-      box-shadow: 0 0 25px rgba(30,132,73,0.3);
+      box-shadow: 0 0 25px rgba(30, 132, 73, 0.3);
     }
 
     /* Buttons */
@@ -72,10 +79,12 @@
       border: none;
       transition: all 0.3s ease;
     }
+
     .btn-green:hover {
       background-color: #145a32;
       transform: translateY(-2px);
     }
+
     /* Navbar Font Styling */
     .custom-navbar,
     .custom-navbar .nav-link,
@@ -88,11 +97,13 @@
 
     .navbar-nav .nav-link.active,
     .navbar-nav .dropdown-item.active {
-      background-color: #0b3d2e !important;  /* dark green */
+      background-color: #0b3d2e !important;
+      /* dark green */
       color: #fff !important;
       font-weight: bold;
       border-radius: 6px;
     }
+
     /* Blog Card Equal Height Fix */
     .card {
       display: flex;
@@ -124,15 +135,17 @@
       gap: 10px;
       z-index: 2000;
     }
+
     .floating-buttons a {
       background: #1e8449;
       color: white;
       border-radius: 50%;
       padding: 15px;
       text-align: center;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
       transition: transform 0.3s ease;
     }
+
     .floating-buttons a:hover {
       transform: scale(1.1);
       background: #145a32;
@@ -140,79 +153,87 @@
 
     /* Animations */
     @keyframes slideInFromLeft {
-      from { transform: translateX(-50px); opacity: 0; }
-      to { transform: translateX(0); opacity: 1; }
+      from {
+        transform: translateX(-50px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
     }
   </style>
 </head>
+
 <body>
 
- <link rel="stylesheet" href="static/css/navbar1.css">
+  <link rel="stylesheet" href="static/css/navbar1.css">
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary-blue custom-navbar">
-  <div class="container-fluid">
-    <!-- Left Logo -->
-    <a class="navbar-brand p-0 me-2" href="index.html">
-      <img src="static/images/ewb_logo.png" alt="EWB Logo">
-    </a>
-
-    <!-- SVCE Logo for Mobile -->
-    <a class="navbar-brand p-0 ms-auto d-lg-none" href="#">
-      <img src="static/images/svcelogo.png" alt="SVCE Logo" class="svce-logo" style="height:50px;">
-    </a>
-
-    <!-- Hamburger Icon -->
-    <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Collapsible Menu -->
-    <div class="collapse navbar-collapse mobile-menu" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="Projects.html">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="obs.html">Office Bearers</a></li>
-        <li class="nav-item"><a class="nav-link" href="Blogs.html">Blogs</a></li>
-
-        <!-- FIXED Dropdown -->
-<li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button"
-     data-bs-toggle="dropdown" aria-expanded="false">
-    Events
-  </a>
-  <ul class="dropdown-menu transparent-dropdown" aria-labelledby="eventsDropdown">
-    <li><a class="dropdown-item" href="gallery.html">2025 - 2026</a></li>
-    <li><a class="dropdown-item" href="event1.html">2024 - 2025</a></li>
-    <li><a class="dropdown-item" href="event2.html">2023 - 2024</a></li>
-    <li><a class="dropdown-item" href="event3.html">2022 - 2023</a></li>
-    <li><a class="dropdown-item" href="event4.html">2021 - 2022</a></li>
-  </ul>
-</li>
-
-
-      <!-- Right Logo (Desktop) -->
-      <a class="navbar-brand p-0 ms-3 d-none d-lg-block" href="#">
-        <img src="static/images/svcelogo.png" alt="SVCE Logo" class="svce-logo">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary-blue custom-navbar">
+    <div class="container-fluid">
+      <!-- Left Logo -->
+      <a class="navbar-brand p-0 me-2" href="index.html">
+        <img src="static/images/ewb_logo.png" alt="EWB Logo">
       </a>
-    </div>
-  </div>
-</nav>
 
-<script>
-  // Function to toggle the navbar
-  function toggleNavbar() {
-    const navbar = document.getElementById('navbarNav');
-    const isExpanded = navbar.classList.contains('show');
-    
-    // Toggle the class 'show' to open/close the navbar
-    if (isExpanded) {
-      navbar.classList.remove('show');
-    } else {
-      navbar.classList.add('show');
+      <!-- SVCE Logo for Mobile -->
+      <a class="navbar-brand p-0 ms-auto d-lg-none" href="#">
+        <img src="static/images/svcelogo.png" alt="SVCE Logo" class="svce-logo" style="height:50px;">
+      </a>
+
+      <!-- Hamburger Icon -->
+      <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible Menu -->
+      <div class="collapse navbar-collapse mobile-menu" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="Projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="obs.html">Office Bearers</a></li>
+          <li class="nav-item"><a class="nav-link" href="Blogs.html">Blogs</a></li>
+
+          <!-- FIXED Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Events
+            </a>
+            <ul class="dropdown-menu transparent-dropdown" aria-labelledby="eventsDropdown">
+              <li><a class="dropdown-item" href="gallery.html">2025 - 2026</a></li>
+              <li><a class="dropdown-item" href="event1.html">2024 - 2025</a></li>
+              <li><a class="dropdown-item" href="event2.html">2023 - 2024</a></li>
+              <li><a class="dropdown-item" href="event3.html">2022 - 2023</a></li>
+              <li><a class="dropdown-item" href="event4.html">2021 - 2022</a></li>
+            </ul>
+          </li>
+
+
+          <!-- Right Logo (Desktop) -->
+          <a class="navbar-brand p-0 ms-3 d-none d-lg-block" href="#">
+            <img src="static/images/svcelogo.png" alt="SVCE Logo" class="svce-logo">
+          </a>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    // Function to toggle the navbar
+    function toggleNavbar() {
+      const navbar = document.getElementById('navbarNav');
+      const isExpanded = navbar.classList.contains('show');
+
+      // Toggle the class 'show' to open/close the navbar
+      if (isExpanded) {
+        navbar.classList.remove('show');
+      } else {
+        navbar.classList.add('show');
+      }
     }
-  }
-</script>
+  </script>
   <!-- Hero Section -->
   <section class="blogs-hero">
     <div class="container">
@@ -224,8 +245,39 @@
   <section class="py-5">
     <div class="container">
       <div class="row g-4">
-        
-
+        <div class="col-md-4">
+          <div class="card blog-card">
+            <img src="static/images/electric.jpg" alt="capacitivetouch">
+            <div class="card-body">
+              <h5 class="card-title">Go elctric</h5>
+              <p class="card-text">Low cost, Zero Emission</p>
+              <p class="text-muted mb-2">Published on: January 5, 2026</p>
+              <a href="electric.html" class="btn btn-green btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card blog-card">
+            <img src="static/images/swarmbanner.jpg" alt="Swarm Robotics">
+            <div class="card-body">
+              <h5 class="card-title">Swarm Robotics</h5>
+              <p class="card-text">Machines and Minds, The AI revolution</p>
+              <p class="text-muted mb-2">Published on: October 25, 2025</p>
+              <a href="robots.html" class="btn btn-green btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card blog-card">
+            <img src="static/images/capacitivetouch.jpg" alt="capacitivetouch">
+            <div class="card-body">
+              <h5 class="card-title">Capacitive Touch</h5>
+              <p class="card-text">The Science Behind Every Tap and Swipe</p>
+              <p class="text-muted mb-2">Published on: October 24, 2025</p>
+              <a href="capacitive.html" class="btn btn-green btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
 
         <!-- Blog Post 1 -->
         <div class="col-md-4">
@@ -362,31 +414,32 @@
     revealOnScroll();
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-      <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const path = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const path = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
 
-    // Clear all existing actives
-    document.querySelectorAll('.navbar .nav-link, .dropdown-menu .dropdown-item')
-      .forEach(a => a.classList.remove('active'));
+      // Clear all existing actives
+      document.querySelectorAll('.navbar .nav-link, .dropdown-menu .dropdown-item')
+        .forEach(a => a.classList.remove('active'));
 
-    // Mark exact-match nav link or dropdown item
-    document.querySelectorAll('.navbar .nav-link, .dropdown-menu .dropdown-item')
-      .forEach(a => {
-        const href = (a.getAttribute('href') || '').split('/').pop().toLowerCase();
-        if (href && href === path) a.classList.add('active');
-      });
+      // Mark exact-match nav link or dropdown item
+      document.querySelectorAll('.navbar .nav-link, .dropdown-menu .dropdown-item')
+        .forEach(a => {
+          const href = (a.getAttribute('href') || '').split('/').pop().toLowerCase();
+          if (href && href === path) a.classList.add('active');
+        });
 
-    // If on any events page, also light up the Events toggle
-    const eventPages = [
-      'gallery.html','event1.html','event2.html','event3.html','event4.html',
-      'pastyear.html','pastyear2.html'
-    ];
-    if (eventPages.includes(path)) {
-      const eventsToggle = document.getElementById('eventsDropdown');
-      if (eventsToggle) eventsToggle.classList.add('active');
-    }
-  });
-</script>
+      // If on any events page, also light up the Events toggle
+      const eventPages = [
+        'gallery.html', 'event1.html', 'event2.html', 'event3.html', 'event4.html',
+        'pastyear.html', 'pastyear2.html'
+      ];
+      if (eventPages.includes(path)) {
+        const eventsToggle = document.getElementById('eventsDropdown');
+        if (eventsToggle) eventsToggle.classList.add('active');
+      }
+    });
+  </script>
 </body>
+
 </html>

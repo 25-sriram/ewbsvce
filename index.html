@@ -198,41 +198,7 @@
       color: #333;
     }
 
-    .content-section {
-      padding: 60px 0;
-      background-color: #fff;
-    }
 
-    .content-heading {
-      color: #1e8449;
-      font-weight: 700;
-      margin-bottom: 30px;
-    }
-
-    .contact-section {
-      background: linear-gradient(to right, #0b3d2e7e 0%, #1e844977 100%), url("static/images/contact.jpg");
-      color: white;
-      background-size: cover;
-      padding: 60px 0;
-    }
-
-
-    .contact-section h2 {
-      color: #f6faf8;
-      font-weight: bold;
-      margin-bottom: 30px;
-    }
-
-    .contact-icons a {
-      font-size: 1.8rem;
-      margin: 0 10px;
-      color: #f3f3f3;
-      transition: color 0.3s ease-in-out;
-    }
-
-    .contact-icons a:hover {
-      color: #07ed03;
-    }
 
     .navbar-brand img {
       background-color: transparent !important;
@@ -415,44 +381,6 @@
       }
     }
 
-    @media (max-width: 768px) {
-      .contact-section h2 {
-        font-size: 1.6rem;
-      }
-
-      .contact-section p {
-        font-size: 0.95rem;
-      }
-
-      iframe {
-        height: 280px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .contact-section {
-        padding: 40px 10px;
-        text-align: center;
-      }
-
-      .contact-section h2 {
-        font-size: 1.4rem;
-      }
-
-      .contact-section p {
-        font-size: 0.9rem;
-      }
-
-      iframe {
-        height: 220px;
-      }
-
-      .contact-icons a {
-        font-size: 1.5rem;
-        margin: 0 8px;
-      }
-    }
-
     /* --- Responsive Fixes for Advisory Section --- */
     @media (max-width: 768px) {
       .advisory-card img {
@@ -620,29 +548,35 @@
 
 
   <!-- Welcome Section -->
-  <section class="welcome-section">
+  <section class="welcome-section"
+    style="background: linear-gradient(to right, #eef4f2 0%, #f6f7f6 100%); padding: 60px 0;">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h2 class="welcome-heading">Welcome to Engineers Without Borders - SVCE Student Chapter</h2>
-          <div class="d-flex justify-content-center align-items-center gap-4 my-3">
-            <!-- Existing EWB India Logo -->
-            <img src="static/images/india_logo.png" alt="EWB India Logo" class="ewb-logo">
+        <div class="col-lg-10 text-center">
+          <h2 class="welcome-heading" style="color: #1e8449; font-weight: 700; margin-bottom: 20px;">
+            Welcome to Engineers Without Borders - SVCE Student Chapter
+          </h2>
 
-            <!-- New EWB SVCE Logo (place your SVCE logo file in static/images/) -->
-            <img src="static/images/ewb_logo.png" alt="EWB SVCE Logo" class="ewb-logo">
+          <div class="d-flex justify-content-center align-items-center gap-4 my-4">
+            <img src="static/images/india_logo.png" alt="EWB India Logo" style="height: 100px; width: auto;">
+            <img src="static/images/ewb_logo.png" alt="EWB SVCE Logo" style="height: 110px; width: auto;">
           </div>
 
-          <p> We are Working under Engineers Without Borders India Chapter</p>
-          <p class="welcome-text">
-            We are a community of engineering students dedicated to designing and implementing sustainable
-            solutions for communities in need. Through our projects, we aim to address global challenges
-            while developing our skills as socially responsible engineers.
-          </p>
-          <p class="welcome-text">
-            Join us in our mission to create a more equitable and sustainable world through engineering
-            innovation and collaboration.
-          </p>
+          <p class="fw-bold mb-4" style="color: #333;">We are Working under Engineers Without Borders India Chapter</p>
+
+          <div style="max-width: 900px; margin: 0 auto;">
+            <p class="welcome-text"
+              style="font-size: 1.1rem; line-height: 1.7; color: #333; text-align: justify; text-justify: inter-word; margin-bottom: 20px;">
+              We are a community of engineering students dedicated to designing and implementing sustainable
+              solutions for communities in need. Through our projects, we aim to address global challenges
+              while developing our skills as socially responsible engineers.
+            </p>
+            <p class="welcome-text"
+              style="font-size: 1.1rem; line-height: 1.7; color: #333; text-align: justify; text-justify: inter-word;">
+              Join us in our mission to create a more equitable and sustainable world through engineering
+              innovation and collaboration.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -702,7 +636,7 @@
         </div>
 
         <div class="col-6 col-md-3 mb-4">
-          <a href="https://www.svce.ac.in/" class="text-decoration-none">
+          <a href="https://www.svce.ac.in/clubs-activities/engineers-without-border/" class="text-decoration-none">
             <div class="stat-card">
               <i class="bi bi-globe"></i>
               <h3>SVCE</h3>
@@ -717,74 +651,257 @@
   <section
     style="background: linear-gradient(to right, #eef4f2 0%, #f6f7f6 100%); color: rgb(4, 165, 44); padding: 60px 0;">
     <div class="container">
-      <div class="row text-center text-md-start">
+      <div class="row">
 
-        <!-- About Us -->
         <div class="col-md-4 mb-4">
-          <h5 class="fw-bold mb-3">ABOUT US</h5>
-          <p style="color:#0a0a0a;">
+          <h5 class="fw-bold mb-3 text-center text-md-start">ABOUT US</h5>
+          <p style="color:#0a0a0a; text-align: justify; text-justify: inter-word;">
             Engineers Without Borders (EWB) is a global network of non-profit organizations that unite engineers,
             professionals, and students to address critical challenges. They apply engineering expertise to improve
             living conditions in underserved communities.
+          </p>
         </div>
 
-        <!-- Mission & Vision -->
         <div class="col-md-4 mb-4">
-          <h5 class="fw-bold mb-3"> MISSION </h5>
-          <ul style="color:black">
-            <li>Enable SVCE students to apply engineering knowledge to real-life problems in a practical and sustainable
-              way.</li>
-            <li>Build a student-led space where collaboration, innovation, and responsibility grow naturally.</li>
-            <li>Promote hands-on engineering that balances technical skills, ethics, and community impact.</li>
+          <h5 class="fw-bold mb-3 text-center text-md-start">MISSION</h5>
+          <ul style="color:black; text-align: justify;">
+            <li class="mb-2">Enable SVCE students to apply engineering knowledge to real-life problems in a practical
+              and sustainable way.</li>
+            <li class="mb-2">Build a student-led space where collaboration, innovation, and responsibility grow
+              naturally.</li>
+            <li class="mb-1">Promote hands-on engineering that balances technical skills, ethics, and community impact.
+            </li>
           </ul>
-
         </div>
+
         <div class="col-md-4 mb-4">
-          <h5 class="fw-bold mb-3">VISION</h5>
-          <p style="color:#030303;">
+          <h5 class="fw-bold mb-3 text-center text-md-start">VISION</h5>
+          <p style="color:#030303; text-align: justify; text-justify: inter-word;">
             To be a student chapter recognized for impactful innovation, nurturing socially conscious engineers, and
             building lasting connections between technology and communities for sustainable change.
           </p>
         </div>
-        <!-- Quick Links -->
-
 
       </div>
     </div>
   </section>
 
+  <style>
+    /* CONTACT SECTION CUSTOM STYLES */
+    .contact-section {
+      background: linear-gradient(rgba(11, 61, 46, 0.555), rgba(30, 132, 73, 0.8)),
+        url("static/images/contact.jpg") center/cover no-repeat;
+      padding: 80px 0;
+      color: white;
+    }
 
+    /* Permanent Neon Glow for the main card */
+    .contact-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(15, 230, 161, 0.4);
+      border-radius: 15px;
+      padding: 30px;
+      height: 100%;
+      /* Permanent Glow Layering */
+      box-shadow: 0 0 15px rgba(15, 230, 161, 0.3),
+        0 0 30px rgba(15, 230, 161, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    /* Permanent Neon Glow for President & Vice President boxes */
+    .member-contact {
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(15, 230, 161, 0.4);
+      border-radius: 12px;
+      padding: 18px;
+      margin-top: 20px;
+      /* Static Neon Shadow */
+      box-shadow: 0 0 12px rgba(15, 230, 161, 0.25),
+        0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .contact-info-title {
+      color: #0fe6a1;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 2px solid #1e8449;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .contact-detail-item i {
+      color: #0fe6a1;
+      font-size: 1.25rem;
+    }
+
+    .map-container {
+      border-radius: 15px;
+      overflow: hidden;
+      /* Permanent shadow for the map box */
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(15, 230, 161, 0.1);
+      height: 100%;
+      min-height: 450px;
+    }
+
+    /* Green hover effect for all mail and phone links */
+    .contact-section a[href^="mailto:"],
+    .contact-section a[href^="tel:"],
+    .contact-section .small span,
+    .contact-section div.small {
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .contact-section a[href^="mailto:"]:hover,
+    .contact-section a[href^="tel:"]:hover,
+    .contact-section .small span:hover,
+    .contact-section div.small:hover {
+      color:  rgb(63, 209, 63) !important;
+      /* Thematic neon green */
+      text-shadow: 0 0 8px rgba(15, 230, 161, 0.6);
+      text-decoration: none;
+    }
+
+    /* Specific styling for the member contact boxes to ensure links are clickable */
+    .member-contact a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .text-info{
+      color : rgb(63, 209, 63) !important;
+    }
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .map-container {
+        min-height: 300px;
+        margin-top: 30px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .contact-section {
+        padding: 50px 0;
+      }
+
+      .map-container {
+        min-height: 300px;
+        margin-top: 30px;
+      }
+    }
+  </style>
   <!-- CONTACT SECTION -->
-
-  <section class="contact-section">
+  <section class="contact-section" id="contact">
     <div class="container">
-      <h2 class="text-center">Contact Us</h2>
-      <div class="row align-items-center">
-        <!-- Google Map -->
-        <div class="col-md-6 mb-4 mb-md-0">
-          <iframe
-            src="https://www.google.com/maps?hl=en&ll=12.986576,79.975282&q=Sri%20Venkateswara%20College%20of%20Engineering%2C%20Pennalur%2C%20Sriperumbudur%20602117%20(SVCE)&z=16&output=embed"
-            width="100%" height="350" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+      <h2 class="text-center fw-bold mb-5" style="color: #0fe6a1; letter-spacing: 2px;">CONTACT US</h2>
 
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <div class="contact-card">
+            <h4 class="contact-info-title">EWB-SVCE Student Chapter</h4>
 
+            <div class="contact-detail-item d-flex gap-3 mb-4">
+              <i class="bi bi-person-badge-fill"></i>
+              <div>
+                <strong>Faculty Incharge:</strong><br>
+                <span class="fs-5">Mr. S P Sivagnana Subramanian</span><br>
+                <small class="text-light-50">Assistant Professor, Dept. of Electronics and Communication
+                  Engineering</small>
+              </div>
+            </div>
+
+            <div class="contact-detail-item d-flex gap-3 mb-4">
+              <i class="bi bi-geo-alt-fill"></i>
+              <div style="text-align: justify; text-justify: inter-word;">
+                Sri Venkateswara College of Engineering<br>
+                Post Bag No: 1, Pennalur Village, Chennai-Bengaluru High Road,<br>
+                Sriperumbudur Tk.-602117, Kancheepuram District, Tamil Nadu, India.
+              </div>
+            </div>
+
+            <div class="row g-3 mb-2">
+              <div class="col-md-6">
+                <div class="contact-detail-item d-flex gap-3">
+                  <i class="bi bi-envelope-at-fill"></i>
+                  <div>
+                    <a href="mailto:ewb@svce.ac.in" class="text-white text-decoration-none">ewb@svce.ac.in</a><br>
+                    <a href="mailto:spsivagnanam@svce.ac.in" class="text-white text-decoration-none"
+                      style="font-size: 0.85rem;">spsivagnanam@svce.ac.in</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="contact-detail-item d-flex gap-3">
+                  <i class="bi bi-telephone-outbound-fill"></i>
+                  <div>
+                    PH NO: 94441 23626<br>
+                    Ext No: 044-27152000 - 226
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="member-contact">
+                  <h6 class="d-flex align-items-center gap-2 mb-2">
+                    <i class="bi bi-person-fill" style="color: #0fe6a1;"></i>
+                    Shruthi V <small class="text-info">(President)</small>
+                  </h6>
+                  <p class="small mb-2">IV year, Dept. of Biotechnology</p>
+                  <div class="small mb-1">
+                    <i class="bi bi-envelope-fill" style="color: #0fe6a1; margin-right: 5px;"></i>
+                    <a href="mailto:2022bt0712@svce.ac.in"
+                      class="text-white text-decoration-none">2022bt0712@svce.ac.in</a>
+                  </div>
+                  <div class="small">
+                    <i class="bi bi-telephone-fill" style="color: #0fe6a1; margin-right: 5px;"></i>
+                    94454 56542
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="member-contact">
+                  <h6 class="d-flex align-items-center gap-2 mb-2">
+                    <i class="bi bi-person-fill" style="color: #0fe6a1;"></i>
+                    Akshay V <small class="text-info">(Vice President)</small>
+                  </h6>
+                  <p class="small mb-2">III year, Dept. of Mechanical Engineering</p>
+                  <div class="small mb-1">
+                    <i class="bi bi-envelope-fill" style="color: #0fe6a1; margin-right: 5px;"></i>
+                    <a href="mailto:2023me0316@svce.ac.in"
+                      class="text-white text-decoration-none">2023me0316@svce.ac.in</a>
+                  </div>
+                  <div class="small">
+                    <i class="bi bi-telephone-fill" style="color: #0fe6a1; margin-right: 5px;"></i>
+                    99419 05288
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-top border-secondary text-center text-md-start">
+              <a href="https://www.instagram.com/ewbsvce" class="btn btn-outline-light btn-sm me-2">
+                <i class="bi bi-instagram"></i> Instagram
+              </a>
+              <a href="https://www.linkedin.com/in/ewbsvce" class="btn btn-outline-light btn-sm">
+                <i class="bi bi-linkedin"></i> LinkedIn
+              </a>
+            </div>
+          </div>
         </div>
-        <!-- Contact Details -->
-        <div class="col-md-6">
-          <p><i class="bi bi-geo-alt-fill"></i> Sri Venkateswara College of Engineering, Sriperumbudur, Tamil Nadu -
-            602117</p>
-          <p><i class="bi bi-telephone-fill"></i>+91 94441 23626</p>
-          <p><i class="bi bi-envelope-fill"></i> <a href="mailto:ewb@svce.ac.in"
-              style="text-decoration:none; color:#eff2f0;">ewb@svce.ac.in</a></p>
-          <div class="contact-icons">
-            <a href="https://www.instagram.com/ewbsvce?igsh=ZHlxb29vNG4xZ2t1" target="_blank"><i
-                class="bi bi-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/ewbsvce" target="_blank"><i class="bi bi-linkedin"></i></a>
+
+        <div class="col-lg-5">
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.763301321451!2d79.9694639757233!3d12.986985514539432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a528cd0cfb6e7ab%3A0x3294da3faad96a9!2sSri%20Venkateswara%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1768482605949!5m2!1sen!2si"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
           </div>
         </div>
       </div>
     </div>
-
   </section>
   <footer class="bg-primary-blue text-white text-center p-3">
     © 2025 Engineers Without Borders - SVCE Student Chapter | All Rights Reserved
