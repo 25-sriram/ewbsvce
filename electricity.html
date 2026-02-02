@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,11 +23,13 @@
       text-align: center;
       position: relative;
     }
+
     .hero h1 {
       font-size: 3rem;
       font-weight: bold;
       animation: fadeInDown 1s ease;
     }
+
     .hero p {
       font-size: 1.2rem;
     }
@@ -49,6 +52,7 @@
       transition: background 0.3s ease;
       z-index: 1000;
     }
+
     .back-btn:hover {
       background: #0d3d24;
     }
@@ -57,27 +61,33 @@
     .blog-section {
       margin: 60px 0;
     }
+
     .blog-card {
       background: #fff;
       border-radius: 15px;
       padding: 30px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
     .blog-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 12px 25px rgba(0,128,0,0.25);
+      box-shadow: 0 12px 25px rgba(0, 128, 0, 0.25);
     }
+
     .blog-card h3 {
       color: #1e8449;
       margin-bottom: 15px;
     }
+
     .blog-card ul {
       padding-left: 18px;
     }
+
     .blog-card li {
       margin-bottom: 8px;
     }
+
     .blog-img {
       max-height: 220px;
       object-fit: cover;
@@ -87,29 +97,55 @@
 
     /* Animations */
     @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-40px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(-40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
+
     .reveal {
       opacity: 0;
       transform: translateY(40px);
       transition: all 0.8s ease;
     }
+
     .reveal.active {
       opacity: 1;
       transform: translateY(0);
     }
 
     /* Responsive */
-    @media(max-width:768px){
-      .hero h1 { font-size: 2rem; }
-      .hero p { font-size: 1rem; }
-      .blog-card { padding: 20px; }
-      .blog-img { max-height: 160px; }
-      .back-btn { width: 40px; height: 40px; font-size: 1.2rem; }
+    @media(max-width:768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .blog-card {
+        padding: 20px;
+      }
+
+      .blog-img {
+        max-height: 160px;
+      }
+
+      .back-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <!-- Hero -->
@@ -129,7 +165,10 @@
     <div class="blog-section reveal active">
       <div class="blog-card">
         <h3>What If the Air Around Us Could Power Our Devices?</h3>
-        <p>Imagine living on a planet where simply breathing the air around you could power your devices. That’s the groundbreaking vision behind UMass Amherst’s discovery of generating electricity from humidity. By harnessing the natural moisture in the atmosphere, researchers are opening the door to a future where our phones, laptops, and everyday gadgets could charge wirelessly—directly from the air itself.</p>
+        <p>Imagine living on a planet where simply breathing the air around you could power your devices. That’s the
+          groundbreaking vision behind UMass Amherst’s discovery of generating electricity from humidity. By harnessing
+          the natural moisture in the atmosphere, researchers are opening the door to a future where our phones,
+          laptops, and everyday gadgets could charge wirelessly—directly from the air itself.</p>
         <img src="static/images/Blogs/electricity/ebanner.png" class="img-fluid blog-img" alt="Intro AirGen">
       </div>
     </div>
@@ -138,7 +177,10 @@
     <div class="blog-section reveal">
       <div class="blog-card">
         <h3>The Breakthrough</h3>
-        <p>Researchers at UMass Amherst have developed a groundbreaking material capable of generating electricity directly from the humidity in the air. This innovation represents a major step toward a future powered by sustainable and renewable energy. By tapping into something as abundant as atmospheric moisture, this discovery could revolutionize clean energy solutions and reduce our reliance on traditional power sources.</p>
+        <p>Researchers at UMass Amherst have developed a groundbreaking material capable of generating electricity
+          directly from the humidity in the air. This innovation represents a major step toward a future powered by
+          sustainable and renewable energy. By tapping into something as abundant as atmospheric moisture, this
+          discovery could revolutionize clean energy solutions and reduce our reliance on traditional power sources.</p>
       </div>
     </div>
 
@@ -146,7 +188,11 @@
     <div class="blog-section reveal">
       <div class="blog-card">
         <h3>What is Air-Generated Electricity?</h3>
-        <p>Air-generated electricity, also called Hygro-Electricity, works by turning humidity into a steady source of power. The process begins with recognizing the presence of water vapor in the air, which then moves through tiny nanopores in the material. As these water molecules pass through, they create a charge imbalance that results in a continuous flow of electricity. This simple yet powerful mechanism has the potential to reshape how we think about renewable energy.</p>
+        <p>Air-generated electricity, also called Hygro-Electricity, works by turning humidity into a steady source of
+          power. The process begins with recognizing the presence of water vapor in the air, which then moves through
+          tiny nanopores in the material. As these water molecules pass through, they create a charge imbalance that
+          results in a continuous flow of electricity. This simple yet powerful mechanism has the potential to reshape
+          how we think about renewable energy.</p>
         <img src="static/images/Blogs/electricity/eprocess.png" class="img-fluid blog-img" alt="Process">
       </div>
     </div>
@@ -155,7 +201,11 @@
     <div class="blog-section reveal">
       <div class="blog-card">
         <h3>Key Highlights</h3>
-        <p>Hygro-electricity offers several remarkable benefits that make it a game-changer in clean energy. Since it relies on natural humidity, the process is completely sustainable and eco-friendly, producing no pollution or harmful byproducts. Even better, it can generate electricity continuously, 24/7, without the need for sunlight, wind, or external input. Its adaptability across different climates and environments further enhances its potential, making it a versatile solution for powering the future.</p>
+        <p>Hygro-electricity offers several remarkable benefits that make it a game-changer in clean energy. Since it
+          relies on natural humidity, the process is completely sustainable and eco-friendly, producing no pollution or
+          harmful byproducts. Even better, it can generate electricity continuously, 24/7, without the need for
+          sunlight, wind, or external input. Its adaptability across different climates and environments further
+          enhances its potential, making it a versatile solution for powering the future.</p>
       </div>
     </div>
 
@@ -163,11 +213,27 @@
     <div class="blog-section reveal">
       <div class="blog-card">
         <h3>Potential Applications</h3>
-        <p>The applications of hygro-electricity could transform the way we use and interact with technology. Imagine sustainable infrastructure where entire buildings generate their own power directly from the air, or portable electronics that never need to be plugged in again. Wearable devices could be designed to produce electricity from clothing, while remote sensors in isolated areas could run indefinitely without external power sources. These possibilities highlight how air-powered energy could seamlessly integrate into everyday life, creating a future of limitless, clean electricity.</p>
+        <p>The applications of hygro-electricity could transform the way we use and interact with technology. Imagine
+          sustainable infrastructure where entire buildings generate their own power directly from the air, or portable
+          electronics that never need to be plugged in again. Wearable devices could be designed to produce electricity
+          from clothing, while remote sensors in isolated areas could run indefinitely without external power sources.
+          These possibilities highlight how air-powered energy could seamlessly integrate into everyday life, creating a
+          future of limitless, clean electricity.</p>
         <img src="static/images/Blogs/electricity/eapplication.png" class="img-fluid blog-img" alt="Applications">
       </div>
     </div>
-
+    <div class="blog-section reveal">
+      <div class="blog-card text-center" style="border: 1px solid #1e8449;">
+        <h3 style="color: #1e8449;">Want to know more?</h3>
+        <p>Stay updated with the latest in sustainable energy and groundbreaking innovations by following us on
+          Instagram!</p>
+        <a href="https://www.instagram.com/ewbsvce_insight?igsh=MWJ3a2t4ZGcyNnN4Yg==" target="_blank"
+          class="btn btn-outline-success mt-2"
+          style="border-radius: 30px; padding: 10px 25px; border-color: #1e8449; color: black;">
+          <i class="bi bi-instagram me-2"></i> Follow @ewbsvce_insight
+        </a>
+      </div>
+    </div>
   </div>
 
   <!-- Footer -->
@@ -177,21 +243,22 @@
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-   <script>
+  <script>
     // Scroll reveal animation
-// Scroll reveal animation (skip already active sections)
-const reveals = document.querySelectorAll('.reveal');
-window.addEventListener('scroll', () => {
-  for (let r of reveals) {
-    if (!r.classList.contains('active')) { // don't re-trigger
-      const rect = r.getBoundingClientRect();
-      if (rect.top < window.innerHeight - 100) {
-        r.classList.add('active');
+    // Scroll reveal animation (skip already active sections)
+    const reveals = document.querySelectorAll('.reveal');
+    window.addEventListener('scroll', () => {
+      for (let r of reveals) {
+        if (!r.classList.contains('active')) { // don't re-trigger
+          const rect = r.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 100) {
+            r.classList.add('active');
+          }
+        }
       }
-    }
-  }
-});
+    });
 
   </script>
 </body>
+
 </html>

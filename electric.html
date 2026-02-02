@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,12 +23,15 @@
       text-align: center;
       position: relative;
     }
+
     .hero h1 {
       font-size: 3rem;
       font-weight: bold;
       animation: fadeInDown 1s ease;
-      color: rgb(5, 184, 28); /* Yellow Theme Title */
+      color: rgb(5, 184, 28);
+      /* Yellow Theme Title */
     }
+
     .hero p {
       font-size: 1.2rem;
     }
@@ -37,7 +41,7 @@
       position: absolute;
       top: 20px;
       left: 20px;
-      background: rgba(60, 60, 0, 0.85); 
+      background: rgba(60, 60, 0, 0.85);
       color: white;
       border-radius: 50%;
       width: 45px;
@@ -50,6 +54,7 @@
       transition: background 0.3s ease;
       z-index: 1000;
     }
+
     .back-btn:hover {
       background: #018d19;
     }
@@ -58,21 +63,25 @@
     .blog-section {
       margin: 60px 0;
     }
+
     .blog-card {
       background: #fff;
       border-radius: 15px;
       padding: 30px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
     .blog-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 12px 25px rgba(0, 255, 0, 0.25);
     }
+
     .blog-card h3 {
-      color: #018d19; 
+      color: #018d19;
       margin-bottom: 15px;
     }
+
     .blog-img {
       max-height: 280px;
       object-fit: cover;
@@ -89,33 +98,54 @@
 
     /* Animations */
     @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-40px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(-40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
+
     .reveal {
       opacity: 0;
       transform: translateY(40px);
       transition: all 0.8s ease;
     }
+
     .reveal.active {
       opacity: 1;
       transform: translateY(0);
     }
 
     /* Responsive */
-    @media(max-width:768px){
-      .hero h1 { font-size: 2rem; }
-      .hero p { font-size: 1rem; }
-      .blog-card { padding: 20px; }
-      .blog-img { max-height: 180px; }
+    @media(max-width:768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .blog-card {
+        padding: 20px;
+      }
+
+      .blog-img {
+        max-height: 180px;
+      }
     }
 
     footer {
-        width: 100% !important;
-        position: relative;
+      width: 100% !important;
+      position: relative;
     }
   </style>
 </head>
+
 <body>
 
   <section class="hero">
@@ -131,7 +161,10 @@
     <div class="blog-section reveal active">
       <div class="blog-card">
         <h3>The End of the "Plugin" Era</h3>
-        <p>For decades, driving has meant stopping to refuel or waiting at charging stations. Now imagine a smarter road embedded with wireless power transfer technology that charges your electric vehicle as you drive. Sensors and inductive coils beneath the asphalt transfer energy directly to your car, keeping your battery topped up in real time with no plugs and no range anxiety.</p>
+        <p>For decades, driving has meant stopping to refuel or waiting at charging stations. Now imagine a smarter road
+          embedded with wireless power transfer technology that charges your electric vehicle as you drive. Sensors and
+          inductive coils beneath the asphalt transfer energy directly to your car, keeping your battery topped up in
+          real time with no plugs and no range anxiety.</p>
         <img src="static/images/Blogs/Go electric/electric.jpg" class="img-fluid blog-img" alt="Wireless Road Concept">
       </div>
     </div>
@@ -139,8 +172,11 @@
     <div class="blog-section reveal">
       <div class="blog-card">
         <h3>How the "Magic" Happens</h3>
-        <p>Beneath the asphalt, high frequency electrical currents flow through embedded copper coils. These coils activate only when a vehicle is detected, forming a precise and invisible magnetic link in real time. A receiver plate mounted under your vehicle captures the field instantly, and onboard power electronics convert this magnetic energy into usable electrical current.</p>
-        
+        <p>Beneath the asphalt, high frequency electrical currents flow through embedded copper coils. These coils
+          activate only when a vehicle is detected, forming a precise and invisible magnetic link in real time. A
+          receiver plate mounted under your vehicle captures the field instantly, and onboard power electronics convert
+          this magnetic energy into usable electrical current.</p>
+
       </div>
     </div>
 
@@ -150,8 +186,10 @@
         <p>Every breakthrough has its challenges, and scaling wireless roads isn't easy:</p>
         <ul>
           <li><strong>High Costs:</strong> Embedding charging coils costs $6–6.6 million per mile.</li>
-          <li><strong>Energy Loss:</strong> Dynamic wireless charging at highway speeds loses more energy than plug-in charging due to air gaps and alignment issues.</li>
-          <li><strong>Retrofitting:</strong> Only EVs with special receiver plates can use these roads, requiring costly retrofits.</li>
+          <li><strong>Energy Loss:</strong> Dynamic wireless charging at highway speeds loses more energy than plug-in
+            charging due to air gaps and alignment issues.</li>
+          <li><strong>Retrofitting:</strong> Only EVs with special receiver plates can use these roads, requiring costly
+            retrofits.</li>
         </ul>
       </div>
     </div>
@@ -162,21 +200,35 @@
         <p>Roads are evolving from passive surfaces into active energy networks across the globe:</p>
         <ul>
           <li><strong>Sweden:</strong> National plan to electrify 3,000 km of highways by 2045.</li>
-          <li><strong>USA (Detroit):</strong> First wireless charging street proven to work in winter and heavy traffic.</li>
-          <li><strong>Israel:</strong> Charging embedded in public bus routes to remove the need for overnight charging.</li>
+          <li><strong>USA (Detroit):</strong> First wireless charging street proven to work in winter and heavy traffic.
+          </li>
+          <li><strong>Israel:</strong> Charging embedded in public bus routes to remove the need for overnight charging.
+          </li>
           <li><strong>South Korea:</strong> Charging lanes keep city buses running continuously.</li>
         </ul>
-        
+
       </div>
     </div>
 
     <div class="blog-section reveal">
       <div class="blog-card">
         <h3>The Future is Built Into the Road</h3>
-        <p>By blending transportation and energy into a single system, we're redefining mobility itself. Roads are no longer just routes from point A to point B—they're becoming active power sources that move us forward.</p>
+        <p>By blending transportation and energy into a single system, we're redefining mobility itself. Roads are no
+          longer just routes from point A to point B—they're becoming active power sources that move us forward.</p>
       </div>
     </div>
-
+    <div class="blog-section reveal">
+      <div class="blog-card text-center" style="border: 1px solid #018d19;">
+        <h3 style="color: #018d19;">Want to know more?</h3>
+        <p>Stay updated with the latest in sustainable engineering and green technology by following us on Instagram!
+        </p>
+        <a href="https://www.instagram.com/ewbsvce_insight?igsh=MWJ3a2t4ZGcyNnN4Yg==" target="_blank"
+          class="btn btn-outline-success mt-2"
+          style="border-radius: 30px; padding: 10px 25px; border-color: #018d19; color: black;">
+          <i class="bi bi-instagram me-2"></i> Follow @ewbsvce_insight
+        </a>
+      </div>
+    </div>
   </div>
 
   <footer class="text-center p-3" style="background:#24b300; color:white;">
@@ -198,4 +250,5 @@
     });
   </script>
 </body>
+
 </html>
