@@ -409,6 +409,83 @@
         font-size: 0.9rem;
       }
     }
+  
+  .about-report-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-report-container > div:first-child {
+    flex: 1;
+}
+
+.annual-report {
+    flex: 0 0 260px;
+    text-align: center;
+}
+.annual-report img {
+  width: 260px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+
+}
+/* Mobile view */
+@media (max-width: 768px) {
+
+    .about-report-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        transform: none;
+        gap: 25px;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    /* Annual Report ABOVE the paragraph */
+    .annual-report {
+        order: -1;
+        width: 100%;
+        flex: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .annual-report img {
+        width: 200px;
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Paragraph section */
+    .about-report-container > div:first-child {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .about-report-container > div:first-child p {
+        text-align: center !important;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .welcome-text {
+        text-align: center !important;
+    }
+}
+
+  
   </style>
 
 </head>
@@ -562,9 +639,11 @@
 
           <!-- Organization description -->
  <!-- Organization description + Annual Report -->
-<div style="max-width: 1050px; margin: 0 auto; transform: translateX(-60px);">
+  
+<div class="about-report-container"
+style="max-width: 105px;margin:0auto;"></div>
 
-    <div style="display: flex; align-items: center; gap: 40px;">
+    <div class="about-report-container">
 
         <!-- Left side: Text -->
         <div style="flex: 1;">
@@ -588,7 +667,7 @@
 </div>
 
         <!-- Right side: Annual Report GIF -->
-        <div style="flex: 0 0 260px; text-align: center;">
+        <div class="annual-report">
 
             <a href="static/images/obs/Annual_Report_2025-2026.pdf"
                target="_blank"
