@@ -12,6 +12,181 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="static/css/club.css">
 </head>
+<style>
+/* =========================================================
+   2026 - 2027 OFFICE BEARERS ALIGNMENT
+   ========================================================= */
+
+#ob-2026 .row.g-4.justify-content-center {
+    display: grid !important;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 30px;
+    row-gap: 35px;
+    margin: 0 !important;
+}
+
+/* Remove Bootstrap column sizing */
+#ob-2026 .row.g-4.justify-content-center > div {
+    width: 100% !important;
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+/* =========================
+   ROW 1 - PRESIDENT
+   ========================= */
+
+#ob-2026 .row > :nth-child(1) {
+    grid-column: 5 / 9;
+    grid-row: 1;
+}
+
+
+/* =========================
+   ROW 2 - CORE TEAM DIRECTORS
+   ========================= */
+
+#ob-2026 .row > :nth-child(6) {
+    grid-column: 4 / 7;
+    grid-row: 2;
+}
+
+#ob-2026 .row > :nth-child(7) {
+    grid-column: 7 / 10;
+    grid-row: 2;
+}
+
+
+/* =========================
+   ROW 3 - VP, GS, JS, TREASURER
+   ========================= */
+
+#ob-2026 .row > :nth-child(2) {
+    grid-column: 1 / 4;
+    grid-row: 3;
+}
+
+#ob-2026 .row > :nth-child(4) {
+    grid-column: 4 / 7;
+    grid-row: 3;
+}
+
+#ob-2026 .row > :nth-child(3) {
+    grid-column: 7 / 10;
+    grid-row: 3;
+}
+
+#ob-2026 .row > :nth-child(5) {
+    grid-column: 10 / 13;
+    grid-row: 3;
+}
+
+
+/* =========================
+   ROW 4 - DIRECTORS
+   ========================= */
+
+#ob-2026 .row > :nth-child(8) {
+    grid-column: 1 / 4;
+    grid-row: 4;
+}
+
+#ob-2026 .row > :nth-child(9) {
+    grid-column: 4 / 7;
+    grid-row: 4;
+}
+
+#ob-2026 .row > :nth-child(13) {
+    grid-column: 7 / 10;
+    grid-row: 4;
+}
+
+#ob-2026 .row > :nth-child(17) {
+    grid-column: 10 / 13;
+    grid-row: 4;
+}
+
+
+/* =========================
+   ROW 5 - COMMUNITY & PROJECT
+   COORDINATORS
+   ========================= */
+
+#ob-2026 .row > :nth-child(10) {
+    grid-column: 2 / 5;
+    grid-row: 5;
+}
+
+#ob-2026 .row > :nth-child(11) {
+    grid-column: 5 / 8;
+    grid-row: 5;
+}
+
+#ob-2026 .row > :nth-child(12) {
+    grid-column: 8 / 11;
+    grid-row: 5;
+}
+
+
+/* =========================
+   ROW 6 - OPERATIONS
+   COORDINATORS
+   ========================= */
+
+#ob-2026 .row > :nth-child(14) {
+    grid-column: 2 / 5;
+    grid-row: 6;
+}
+
+#ob-2026 .row > :nth-child(15) {
+    grid-column: 5 / 8;
+    grid-row: 6;
+}
+
+#ob-2026 .row > :nth-child(16) {
+    grid-column: 8 / 11;
+    grid-row: 6;
+}
+
+
+/* =========================
+   ROW 7 - CREATIVE
+   COORDINATORS
+   ========================= */
+
+#ob-2026 .row > :nth-child(18) {
+    grid-column: 2 / 5;
+    grid-row: 7;
+}
+
+#ob-2026 .row > :nth-child(19) {
+    grid-column: 5 / 8;
+    grid-row: 7;
+}
+
+#ob-2026 .row > :nth-child(20) {
+    grid-column: 8 / 11;
+    grid-row: 7;
+}
+
+@media (max-width: 768px) {
+
+    #ob-2026 .row.g-4.justify-content-center {
+        display: grid !important;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    #ob-2026 .row.g-4.justify-content-center > div {
+        grid-column: 1 / 2 !important;
+        grid-row: auto !important;
+    }
+
+}
+</style>
+</head>
 <body>
 
 <!-- Navbar -->
@@ -20,7 +195,7 @@
   <div class="container-fluid">
     <a class="navbar-brand p-0 me-2" href="index.html">
       <img src="static/images/ewb_logo.png" alt="EWB Logo">
-    </a>
+    </a>p
 
     <a class="navbar-brand p-0 ms-auto d-lg-none" href="#">
       <img src="static/images/svcelogo.png" alt="SVCE Logo" class="svce-logo" style="height:50px;">
@@ -44,6 +219,7 @@
             Office Bearers
           </a>
           <ul class="dropdown-menu transparent-dropdown" aria-labelledby="obsDropdown">
+            <li><a class="dropdown-item" href="#ob-2026">2026 - 2027</a></li>
             <li><a class="dropdown-item" href="#ob-2025">2025 - 2026</a></li>
             <li><a class="dropdown-item" href="#ob-2024">2024 - 2025</a></li>
             <li><a class="dropdown-item" href="#ob-2023">2023 - 2024</a></li>
@@ -90,6 +266,657 @@
     }
   }
 </script>
+
+
+<!-- Title -->
+ <!-- ========================================================= -->
+<!-- 2026 - 2027 OFFICE BEARERS -->
+<!-- ========================================================= -->
+
+<section id="ob-2026">
+
+  <!-- Title -->
+  <div class="page-title text-center my-4">
+    <h1>OFFICE BEARERS</h1>
+    <h2>2026 - 2027</h2>
+  </div>
+
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+ <!-- 1. PRESIDENT -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="member-card">
+          <div class="card-inner">
+
+            <div class="card-front">
+              <img src="static/images/obs/Shujah.jpg" alt="President">
+              <h3>Shujah Falehah Mariam</h3>
+              <p class="role">President</p>
+            </div>
+
+            <div class="card-back">
+              <h3>Shujah Falehah Mariam</h3>
+              <p class="role">President</p>
+              <p>BT · IV year</p>
+               <p>Email: 2023bt0281@svce.ac.in</p>
+            <p>LinkedIn: Shujah Mariam</p>
+            <a href="https://www.linkedin.com/in/shujah-mariam-954bb5318" 
+    
+                target="_blank"
+                 rel="noopener noreferrer"
+                 style="color: #eceef1; font-weight: bold; text-decoration: underline;">
+                 View Profile
+              </a>
+              <p>2026 - 2027</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 2. VICE PRESIDENT -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="member-card">
+          <div class="card-inner">
+
+            <div class="card-front">
+              <img src="static/images/obs/janani.jpg" alt="Vice President">
+              <h3>Janani Prakash</h3>
+              <p class="role">Vice President</p>
+            </div>
+
+            <div class="card-back">
+              <h3>Janani Prakash</h3>
+              <p class="role">Vice President</p>
+              <p>CSE · III year</p>
+              <p>Email: 2024cs0478@svce.ac.in</p>
+            <p>LinkedIn: janani prakash</p>
+            <a href="https://www.linkedin.com/in/janani-prakash-22888a37a" 
+    
+                target="_blank"
+                rel="noopener noreferrer"
+                style="color: #eceef1; font-weight: bold; text-decoration: underline;">
+                View Profile
+            </a>
+              <p>2026 - 2027</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 3. JOINT SECRETARY -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="member-card">
+          <div class="card-inner">
+
+            <div class="card-front">
+              <img src="static/images/obs/Vanthana GK.jpg.jpeg" alt="Joint Secretary">
+              <h3>Vanthana G K</h3>
+              <p class="role">Joint Secretary</p>
+            </div>
+
+            <div class="card-back">
+              <h3>Vanthana Gunasekaran kalpana</h3>
+              <p class="role">Joint Secretary</p>
+              <p>EEE · II year</p>
+              <p>Email: 2025ee0777@svce.ac.in</p>
+              <p>LinkedIn:Vanthana Gunasekaran Kalpana</p>
+              <a href="https://www.linkedin.com/in/vanthana-gunasekaran-kalpana-76b179436"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 style="color: #eceef1; font-weight: bold; text-decoration: underline;">
+                 View Profile
+              </a>
+              <p>2026 - 2027</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 4. GENERAL SECRETARY -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="member-card">
+          <div class="card-inner">
+
+            <div class="card-front">
+              <img src="static/images/obs/aruna.jpeg" alt="General Secretary">
+              <h3>Aruna Arunachalam</h3>
+              <p class="role">General Secretary</p>
+            </div>
+
+            <div class="card-back">
+              <h3>Aruna Arunachalam</h3>
+              <p class="role">General Secretary</p>
+              <p>CSE · III year</p>
+              <p>Email: 2023cs0456@svce.ac.in</p>
+              <p>LinkedIn: Aruna Arunachalam</p>
+              <a href="https://www.linkedin.com/in/aruna-arunachalam-22888a37a"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 style="color: #eceef1; font-weight: bold; text-decoration: underline;">
+                 View Profile
+              </a>
+              <p>2026 - 2027</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 5. TREASURER -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="member-card">
+          <div class="card-inner">
+
+            <div class="card-front">
+              <img src="static/images/obs/Sai hari.jpeg" alt="Treasurer">
+              <h3>SaiHari R</h3>
+              <p class="role">Treasurer</p>
+            </div>
+
+            <div class="card-back">
+              <h3>SaiHari R</h3>
+              <p class="role">Treasurer</p>
+              <p>ECE · II year</p>
+              <p>Email: 2025ec0740@svce.ac.in</p>
+              <p>LinkedIn: Sai Hari.R</p>
+              <a href="https://www.linkedin.com/in/sai-hari-r-2abba3374"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 style="color: #eceef1; font-weight: bold; text-decoration: underline;">
+                 View Profile
+              </a>
+              <p>2026 - 2027</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 6. CORE TEAM DIRECTOR - 1 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="member-card">
+          <div class="card-inner">
+
+            <div class="card-front">
+              <img src="static/images/obs/Akshay V.png" alt="Core Team Director">
+              <h3>Akshay Vasudevan</h3>
+              <p class="role">Core Team Director</p>
+            </div>
+
+            <div class="card-back">
+              <h3>Akshay Vasudevan</h3>
+              <p class="role">Core Team Director</p>
+              <p>ME · IV year</p>
+              </p>Email: 2023me0316@svce.ac.in</p>
+            <p>LinkedIn: AKSHAY V</p>
+            <a href="https://www.linkedin.com/in/akshay-v-281918274" 
+               target="_blank"
+               rel="noopener noreferrer"
+               style="color: #eceef1; font-weight: bold; text-decoration: underline;">
+               View Profile
+            </a>
+              <p>2026 - 2027</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 7. CORE TEAM DIRECTOR - 2 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="member-card">
+          <div class="card-inner">
+
+            <div class="card-front">
+              <img src="static/images/obs/Gayathri R.png" alt="Core Team Director">
+              <h3>Gayathri Ramkumar</h3>
+              <p class="role">Core Team Director</p>
+            </div>
+
+            <div class="card-back">
+              <h3>Gayathri Ramkumar</h3>
+              <p class="role">Core Team Director</p>
+              <p>ME · IV year</p>
+              <p>Email: 2023me0251@svce.ac.in</p>
+            <p>LinkedIn: gayathri r</p>
+            <a href="https://www.linkedin.com/in/gayathrintr020106" 
+               target="_blank"
+               rel="noopener noreferrer"
+               style="color: #eceef1; font-weight: bold; text-decoration: underline;">
+               View Profile
+            </a>
+              <p>2026 - 2027</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 8. COMMUNITY & PROJECT DIRECTOR - 1 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="member-card">
+          <div class="card-inner">
+
+            <div class="card-front">
+              <img src="static/images/obs/nivethetha.jpeg"
+                   alt="Community and Project Director">
+              <h3>Nivethetha V</h3>
+              <p class="role">Community &amp; Project Director</p>
+            </div>
+
+            <div class="card-back">
+              <h3>Nivethetha V</h3>
+              <p class="role">Community &amp; Project Director</p>
+              <p>BT·III year</p>
+              <p>Email: 2024bt0124@svce.ac.in</p>
+              <p>LinkedIn: Nivethetha V</p>
+              <a href=" https://www.linkedin.com/in/nivethetha-v-51b032327" target="_blank" rel="noopener noreferrer"
+                 style="color:#eceef1;font-weight:bold;text-decoration:underline;">
+                 View Profile
+              </a>
+              <p>2026 - 2027</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 9. COMMUNITY & PROJECT DIRECTOR - 2 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="member-card">
+          <div class="card-inner">
+
+            <div class="card-front">
+              <img src="static/images/obs/Harish.jpeg"
+                   alt="Community and Project Director">
+              <h3>Harish S</h3>
+              <p class="role">Community &amp; Project Director</p>
+            </div>
+
+            <div class="card-back">
+              <h3>Harish S</h3>
+              <p class="role">Community &amp; Project Director</p>
+              <p>MN ·III year</p>
+              <p>Email: 2025mn0377@svce.ac.in</p>
+              <p>LinkedIn: Harish S</p>
+              <a href="https://www.linkedin.com/in/harish-s-51b032327" target="_blank" rel="noopener noreferrer"
+                 style="color:#eceef1;font-weight:bold;text-decoration:underline;">
+                 View Profile
+              </a>
+              <p>2026 - 2027</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 10. COMMUNITY & PROJECT COORDINATOR - 1 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="member-card">
+          <div class="card-inner">
+
+            <div class="card-front">
+              <img src="static/images/obs/Puja.jpeg"
+                   alt="Community and Project Coordinator">
+              <h3>Puja S</h3>
+              <p class="role">Community &amp; Project Coordinator</p>
+            </div>
+
+            <div class="card-back">
+              <h3>Puja S</h3>
+              <p class="role">Community &amp; Project Coordinator</p>
+              <p>CSE · II year</p>
+              <p>Email: 2025cs0851@svce.ac.in</p>
+              <p>LinkedIn:S Puja </p>
+              <a href=" https://www.linkedin.com/in/s-puja-222690383" target="_blank" rel="noopener noreferrer"
+                 style="color:#eceef1;font-weight:bold;text-decoration:underline;">
+                 View Profile
+              </a>
+              <p>2026 - 2027</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 11. COMMUNITY & PROJECT COORDINATOR - 2 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="member-card">
+          <div class="card-inner">
+
+            <div class="card-front">
+              <img src="static/images/obs/Akshay gowtam.jpeg"
+                   alt="Community and Project Coordinator">
+              <h3>Akshay Gowtam M L</h3>
+              <p class="role">Community &amp; Project Coordinator</p>
+            </div>
+
+            <div class="card-back">
+              <h3>Akshay Gowtam M L</h3>
+              <p class="role">Community &amp; Project Coordinator</p>
+              <p>CSE · II year</p>
+              <p>Email: 2025cs0969@svce.ac.in</p>
+              <p>LinkedIn:Akshay Gowtam.M.L </p>
+              <a href="https://www.linkedin.com/in/akshay-gowtam-m-l" target="_blank" rel="noopener noreferrer"
+                 style="color:#eceef1;font-weight:bold;text-decoration:underline;">
+                 View Profile
+              </a>
+              <p>2026 - 2027</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 12. COMMUNITY & PROJECT COORDINATOR - 3 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="member-card">
+          <div class="card-inner">
+
+            <div class="card-front">
+              <img src="static/images/obs/Sethu.jpeg"
+                   alt="Community and Project Coordinator">
+              <h3>Sethu Madhavan</h3>
+              <p class="role">Community &amp; Project Coordinator</p>
+            </div>
+
+            <div class="card-back">
+              <h3>Sethu Madhavn Srinivasan</h3>
+              <p class="role">Community &amp; Project Coordinator</p>
+              <p>ECE · II year</p>
+              <p>Email: 2025ec0243@svce.ac.in</p>
+              <p>LinkedIn:Sethu Madhavan</p>
+              <a href="https://www.linkedin.com/in/sethu-madhavan-00b595381"
+
+" target="_blank" rel="noopener noreferrer"
+                 style="color:#eceef1;font-weight:bold;text-decoration:underline;">
+                 View Profile
+              </a>
+              <p>2026 - 2027</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 13. OPERATIONS DIRECTOR -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="member-card">
+          <div class="card-inner">
+
+            <div class="card-front">
+              <img src="static/images/obs/Gokul.png"
+                   alt="Operations Director">
+              <h3>Gokul Senthilkumar</h3>
+              <p class="role">Operations Director</p>
+            </div>
+
+            <div class="card-back">
+              <h3>Gokul Senthilkumar</h3>
+              <p class="role">Operations Director</p>
+              <p>BT ·III year</p>
+              <p>Email: 2024bt0848@svce.ac.in</p>
+              <p>LinkedIn:Gokul S</p>
+              <a href=" https://www.linkedin.com/in/gokul-s-3526bb337" target="_blank" rel="noopener noreferrer"
+                 style="color:#eceef1;font-weight:bold;text-decoration:underline;">
+                 View Profile
+              </a>
+              <p>2026 - 2027</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 14. OPERATIONS COORDINATOR - 1 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="member-card">
+          <div class="card-inner">
+
+            <div class="card-front">
+              <img src="static/images/obs/Aradhana.jpeg"
+                   alt="Operations Coordinator">
+              <h3>Aradhana Vijayakumar</h3>
+              <p class="role">Operations Coordinator</p>
+            </div>
+
+            <div class="card-back">
+              <h3>Aradhana Vijayakumar</h3>
+              <p class="role">Operations Coordinator</p>
+              <p>BT · II year</p>
+              <p>Email: 2025bt0230@svce.ac.in</p>
+              <p>LinkedIn: Aradhana V</p>
+              <a href="         https://www.linkedin.com/in/aradhana-v-b2936a385" target="_blank" rel="noopener noreferrer"
+                 style="color:#eceef1;font-weight:bold;text-decoration:underline;">
+                 View Profile
+              </a>
+              <p>2026 - 2027</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 15. OPERATIONS COORDINATOR - 2 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="member-card">
+          <div class="card-inner">
+
+            <div class="card-front">
+              <img src="static/images/obs/ani.jpeg"
+                   alt="Operations Coordinator">
+              <h3>VV Anirudh Krishna</h3>
+              <p class="role">Operations Coordinator</p>
+            </div>
+
+            <div class="card-back">
+              <h3>VV Anirudh Krishna</h3>
+              <p class="role">Operations Coordinator</p>
+              <p>MN ·II year</p>
+              <p>Email: 2025MN0587@svce.ac.in</p>
+              <p>LinkedIn:Vankadaru Anirudh </p>
+              <a href="https://www.linkedin.com/in/vankadaru-anirudh"
+ 
+" target="_blank" rel="noopener noreferrer"
+                 style="color:#eceef1;font-weight:bold;text-decoration:underline;">
+                 View Profile
+              </a>
+              <p>2026 - 2027</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- 16. OPERATIONS COORDINATOR - 3 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="member-card">
+          <div class="card-inner">
+
+            <div class="card-front">
+              <img src="static/images/obs/lak.jpeg"
+                   alt="Operations Coordinator">
+              <h3>Lakshmanan S</h3>
+              <p class="role">Operations Coordinator</p>
+            </div>
+
+            <div class="card-back">
+              <h3>Lakshmanan S</h3>
+              <p class="role">Operations Coordinator</p>
+              <p>EEE ·II year</p>
+              <p>Email: 2025ee0034@svce.ac.in</p>
+              <p>LinkedIn: Lakshamanan S</p>
+              <a href="https://www.linkedin.com/in/lakshmanan-s-b72b673a2"
+
+
+" target="_blank" rel="noopener noreferrer"
+                 style="color:#eceef1;font-weight:bold;text-decoration:underline;">
+                 View Profile
+              </a>
+              <p>2026 - 2027</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 17. CREATIVE DIRECTOR -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="member-card">
+          <div class="card-inner">
+
+            <div class="card-front">
+              <img src="static/images/obs/sri.jpg"
+                   alt="Creative Director">
+              <h3>Sri Ram Rajendran</h3>
+              <p class="role">Creative Director</p>
+            </div>
+
+            <div class="card-back">
+              <h3>Sri Ram Rajendran</h3>
+              <p class="role">Creative Director</p>
+              <p>AD ·III year</p>
+              <p>Email: 2024ad0006@svce.ac.in</p>
+              <p>LinkedIn: Sri Ram R</p>
+              <a href="https://www.linkedin.com/in/sri-ram-r-7r" target="_blank" rel="noopener noreferrer"
+                 style="color:#eceef1;font-weight:bold;text-decoration:underline;">
+                 View Profile
+              </a>
+              <p>2026 - 2027</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 18. CREATIVE COORDINATOR - 1 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="member-card">
+          <div class="card-inner">
+
+            <div class="card-front">
+              <img src="static/images/obs/Charu.jpeg"
+                   alt="Creative Coordinator">
+              <h3>Charulathaa Srinivasalu</h3>
+              <p class="role">Creative Coordinator</p>
+            </div>
+
+            <div class="card-back">
+              <h3>Charulathaa Srinivasalu</h3>
+              <p class="role">Creative Coordinator</p>
+              <p>CSE· II year</p>
+              <p>Email: 2025cs0009@svce.ac.in</p>
+              <p>LinkedIn: Charulathaa Srivivas</p>
+              <a href="" target="_blank" rel="noopener noreferrer"
+                 style="color:#eceef1;font-weight:bold;text-decoration:underline;">
+                 View Profile
+              </a>
+              <p>2026 - 2027</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 19. CREATIVE COORDINATOR - 2 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="member-card">
+          <div class="card-inner">
+
+            <div class="card-front">
+              <img src="static/images/obs/Sow.jpeg"
+                   alt="Creative Coordinator">
+              <h3>Sowbarnika Vijayababu</h3>
+              <p class="role">Creative Coordinator</p>
+            </div>
+
+            <div class="card-back">
+              <h3>Sowbarnika Vijayababu</h3>
+              <p class="role">Creative Coordinator</p>
+              <p>CSE · II year</p>
+              <p>Email: 2025cs0288@svce.ac.in</p>
+              <p>LinkedIn:Sowbarnika Vijayababu</p>
+              <a href="https://www.linkedin.com/in/sowbarnika-vijayababu-a03838384" target="_blank" rel="noopener noreferrer"
+                 style="color:#eceef1;font-weight:bold;text-decoration:underline;">
+                 View Profile
+              </a>
+              <p>2026 - 2027</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 20. CREATIVE COORDINATOR - 3 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="member-card">
+          <div class="card-inner">
+
+            <div class="card-front">
+              <img src="static/images/obs/Teja.jpeg"
+                   alt="Creative Coordinator">
+              <h3>Tejashvi Veeramani</h3>
+              <p class="role">Creative Coordinator</p>
+            </div>
+
+            <div class="card-back">
+              <h3>Tejashvi Veeramani</h3>
+              <p class="role">Creative Coordinator</p>
+              <p>EEE · II year</p>
+              <p>Email: 2025ee0646@svce.ac.inL</p>
+              <p>LinkedIn:Tejashvi V </p>
+              <a href="https://www.linkedin.com/in/tejashvi-v-160113395"
+                 target="_blank" rel="noopener noreferrer"
+                 style="color:#eceef1;font-weight:bold;text-decoration:underline;">
+                 View Profile
+              </a>
+              <p>2026 - 2027</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- END OF 2026 - 2027 OFFICE BEARERS -->
+<!-- ========================================================= -->
+<div class="page-title text-center my-4">
+  <h1>OFFICE BEARERS</h1>
+  <h2>2025 - 2026</h2>
+</div>
+
+           
+  
+
+    
+          
+
+
 
 
 <!-- Title -->
